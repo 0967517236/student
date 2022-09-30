@@ -73,7 +73,7 @@ def update_student(student_id):
 
 
 @app.route(PREFIX_API.format('/students/<student_id>'), methods=['DELETE'])
-def remove_animal(student_id):
+def remove_student(student_id):
     list_student = table_student.find()
     list_student = list(list_student)
     if not student_id:
